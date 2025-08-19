@@ -1,42 +1,17 @@
-# Byte-compiled / optimized / DLL files
+venv/
 __pycache__/
 *.py[cod]
-*$py.class
-
-# Virtual environments
-venv/
+*.pyc
 .env
-.venv/
-env/
-ENV/
-pip-wheel-metadata/
-
-# Distribution / packaging
-build/
-dist/
-*.egg-info/
-.eggs/
-
-# Editor / OS files
 .vscode/
-.idea/
-*.swp
 .DS_Store
 Thumbs.db
-
-# Logs, caches, notebook checkpoints
-*.log
 .pytest_cache/
-.ipynb_checkpoints/
-.cache/
 .mypy_cache/
-
-# Large model / binary files
+.cache/
 *.dat
 *.pt
 *.pth
 *.h5
 models/
-
-# Git LFS attributes
 .gitattributes
