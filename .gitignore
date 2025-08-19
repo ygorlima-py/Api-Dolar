@@ -1,0 +1,68 @@
+@"
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env
+.venv/
+env/
+ENV/
+pip-wheel-metadata/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# Editor / OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# mypy / caching
+.mypy_cache/
+.cache/
+.pyre/
+.ropeproject/
+
+# Database
+*.sqlite3
+
+# Logs
+*.log
+
+# Large model / binary files you don't want in git
+*.dat
+*.pt
+*.pth
+*.h5
+models/
+*.bin
+
+# Git LFS attributes file (if using LFS)
+.gitattributes
+"@ > .gitignore
+
+git add .gitignore
+git rm -r --cached venv
+git add .
+git commit -m "Remove venv do repo e adiciona .gitignore"
+git push
