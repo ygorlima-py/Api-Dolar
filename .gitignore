@@ -1,17 +1,35 @@
+# cria .gitignore
+@"
+# Ambiente virtual
 venv/
+
+# Python
 __pycache__/
 *.py[cod]
 *.pyc
+
+# Ambiente / IDE
 .env
 .vscode/
+.idea/
+
+# Sistema
 .DS_Store
 Thumbs.db
+
+# Caches / logs
 .pytest_cache/
 .mypy_cache/
 .cache/
+*.log
+
+# Modelos / binários grandes
 *.dat
 *.pt
 *.pth
 *.h5
 models/
+
+# Git LFS attrs (se usar)
 .gitattributes
+"@ | Out-File .gitignore -Encoding utf8
