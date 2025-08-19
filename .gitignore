@@ -1,4 +1,3 @@
-@"
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -18,51 +17,26 @@ dist/
 *.egg-info/
 .eggs/
 
-# Pytest / coverage
-.pytest_cache/
-.coverage
-htmlcov/
-coverage.xml
-
 # Editor / OS files
 .vscode/
 .idea/
 *.swp
-*.swo
-*.sublime-project
-*.sublime-workspace
 .DS_Store
 Thumbs.db
 
-# Jupyter
-.ipynb_checkpoints/
-
-# mypy / caching
-.mypy_cache/
-.cache/
-.pyre/
-.ropeproject/
-
-# Database
-*.sqlite3
-
-# Logs
+# Logs, caches, notebook checkpoints
 *.log
+.pytest_cache/
+.ipynb_checkpoints/
+.cache/
+.mypy_cache/
 
-# Large model / binary files you don't want in git
+# Large model / binary files
 *.dat
 *.pt
 *.pth
 *.h5
 models/
-*.bin
 
-# Git LFS attributes file (if using LFS)
+# Git LFS attributes
 .gitattributes
-"@ > .gitignore
-
-git add .gitignore
-git rm -r --cached venv
-git add .
-git commit -m "Remove venv do repo e adiciona .gitignore"
-git push
