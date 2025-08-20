@@ -1,5 +1,3 @@
-# cria .gitignore
-@"
 # Ambiente virtual
 venv/
 
@@ -32,4 +30,3 @@ models/
 
 # Git LFS attrs (se usar)
 .gitattributes
-"@ | Out-File .gitignore -Encoding utf8
